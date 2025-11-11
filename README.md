@@ -45,7 +45,7 @@ Below are selected visualisations from the Tableau analysis:
 ---
 
 ## 📘 Full Report
-The complete academic report (including analysis and references) is available in the [`/report`](./report) folder.  
+The complete academic report (including analysis and references) is available in the [`/reports`](./reports) folder.  
 
 > *Coursework completed as part of the BSc (Hons) Computer Science program at Liverpool John Moores University.*
 
