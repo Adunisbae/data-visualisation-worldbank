@@ -51,3 +51,6 @@ The complete academic report (including analysis and references) is available in
 
 ---
 
+---
+
+⭐️ *“Good visualisation turns data into stories — and stories into understanding.”*
