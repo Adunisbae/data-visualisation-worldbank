@@ -1,199 +1,193 @@
-# Data Visualisation: World Bank Economic & Social Analysis
+# Data Visualisation - World Bank Analysis
 
-**Interactive Tableau analysis of World Bank datasets across 156 countries revealing correlations between gender participation, education investment, and economic productivity.**
+## Overview
 
----
+A comprehensive Tableau-based analysis of World Bank datasets exploring socioeconomic trends across 156 countries. This project demonstrates advanced data visualization techniques to uncover patterns in gender participation, economic productivity, migration, education, and unemployment.
 
-## Quick Results Summary
-
-- **8 Interactive Dashboards** analyzing 15+ economic and social indicators
-- **Key Finding**: Gender participation in workforce correlates with economic productivity (correlation strength: 0.72)
-- **Education ROI**: Education investment shows 2.3x return on economic growth across developed nations
-- **Coverage**: 156 countries across 10+ years of World Bank data
-- **Chart Types**: 9 distinct visualization types (bar, line, heatmap, scatter, bubble, tree map, and more)
-
----
-
-## Problem Statement
-
-Global development data contains hidden patterns that can inform policy decisions, investment strategies, and progress tracking. This project demonstrates how effective data visualization transforms complex World Bank datasets into compelling narratives about:
-- **Gender participation impact**: Understanding women's role in economic growth
-- **Education as economic driver**: Quantifying returns on educational investment
-- **Global development patterns**: Identifying regional economic trends and outliers
-- **Sustainable development**: Tracking progress toward UN SDGs
-
----
-
-## Dataset & Analysis Scope
-
-**Data Source**: World Bank Open Data
-- **Countries**: 156 nations across all income levels
-- **Time Period**: 10+ years of historical data
-- **Indicators**: 15+ social, economic, and educational metrics
-- **Scope**: Comparative regional analysis (developed, emerging, developing economies)
-
-**Analysis Methodology**:
-1. **Exploratory data analysis**: Distribution analysis by region and income level
-2. **Correlation analysis**: Relationship between indicators (statistical significance testing)
-3. **Trend analysis**: Temporal patterns and growth trajectories
-4. **Comparative analysis**: Benchmarking across country groups and regions
+**Key Dataset:** World Bank Socioeconomic Indicators (1995-2010)  
+**Tool:** Tableau  
+**Analysis Scope:** 156 countries across 10+ socioeconomic indicators
 
 ---
 
 ## Key Findings
 
-### Finding 1: Gender Participation & Economic Productivity
-- Strong positive correlation (r = 0.72) between female labor force participation and GDP per capita
-- Developed nations average 50% female workforce → 2.1x higher productivity
-- Countries increasing female participation by 10% see ~3-5% GDP growth within 3 years
-- **Implication**: Gender equality is economic imperative, not just social goal
+- **Gender Gap in Labour:** Men consistently show higher workforce participation rates than women across most countries, particularly in developing nations. Countries like Mauritania demonstrate that gender-equitable policies can narrow this gap.
 
-### Finding 2: Education as Economic Multiplier
-- Average years of schooling correlates with long-term economic growth
-- 1 additional year of education → 2.3% increase in economic productivity
-- Countries with 12+ avg education years show 3x faster development trajectory
-- **Implication**: Education spending yields strongest ROI among development investments
+- **Productivity Correlation:** Advanced economies (Japan, Sweden, USA) maintain high productivity levels ($600K+ per worker), while emerging markets (Czech Republic, South Korea) show rapid productivity growth, indicating effective economic reforms.
 
-### Finding 3: Regional Development Disparities
-- Sub-Saharan Africa shows highest growth potential but lowest baseline productivity
-- Asian economies (China, India, Vietnam) demonstrating fastest convergence to developed world
-- Middle East/North Africa high human capital but underutilized (gender/youth employment gaps)
-- **Implication**: Regional policies must address specific bottlenecks
+- **Migration & Remittances:** Remittances play a critical role in GDP for countries with significant immigrant populations (e.g., Armenia). Migration patterns reveal the relationship between labour mobility and economic development.
+
+- **Education-Employment Link:** Strong correlation exists between average schooling years and labour market availability. Regions with higher education levels exhibit lower skill constraints.
+
+- **Youth Unemployment Crisis:** Young people face disproportionately high unemployment rates, especially young women. This skills-job imbalance requires targeted education and training interventions.
 
 ---
 
-## Dashboard Analysis
+## Analysis Methodology
 
-### Dashboard 1-3: Gender Participation Impact
-![Gender Participation by Region](dashboards/Figure10_BarChart.png)
-![Female Education Trends](dashboards/Figure11_BarChart.png)
-![Workforce Participation Comparison](dashboards/Figure12_BarChart.png)
+This analysis employs multiple Tableau visualization techniques to explore World Bank data:
 
-### Dashboard 4-5: Economic Productivity Patterns
-![Economic Indicators Heatmap](dashboards/Figure13_HeatMap.png)
-![Global Economic Map](dashboards/Figure14_Map.png)
-
-### Dashboard 6-8: Education & Growth Correlation
-![Education Investment Trends](dashboards/Figure15_LineChart.png)
-![Country Performance Scatter](dashboards/Figure16_Scatter.png)
-![Regional Growth Bubble Chart](dashboards/Figure17_BubbleChart.png)
-
-### Dashboard 9-10: Hierarchical & Distribution Analysis
-![Development Hierarchy TreeMap](dashboards/Figure18_TreeMap.png)
-![Statistical Distribution Analysis](dashboards/Figure19_Box&Whiskers.png)
+- **Bar Charts** - Comparative analysis of gender participation rates and unemployment trends
+- **Heat Maps** - Migration patterns and economic impacts across countries
+- **Geographic Maps** - Global education levels and skill constraints visualization
+- **Line Charts** - Temporal trends in labour participation over 15 years
+- **Scatter Plots** - Relationship analysis between youth unemployment and productivity
+- **Bubble Charts** - Educational and employment exclusion patterns by gender
+- **Tree Maps** - Policy effectiveness across countries and categories
+- **Box & Whiskers Plots** - Productivity and social cohesion score distributions
 
 ---
 
-## Visualization Techniques Employed
+## Visualizations
 
-| Chart Type | Use Case | Insight Provided |
-|-----------|----------|------------------|
-| **Bar Chart** | Regional/country comparisons | Relative performance ranking |
-| **Line Chart** | Temporal trends | Growth trajectories and inflection points |
-| **Heatmap** | Multi-dimensional relationships | Correlation patterns and clusters |
-| **Scatter Plot** | Bi-variate correlation | Strength and direction of relationships |
-| **Bubble Chart** | 3-4 dimensional data | Proportional representation with multiple variables |
-| **Tree Map** | Hierarchical composition | Part-to-whole relationships across categories |
-| **Geo Map** | Geographic distribution | Spatial patterns and regional disparities |
-| **Box & Whiskers** | Statistical distribution | Outliers, quartiles, and variability |
+### Bar Charts
+
+**Figure 10: Average Participation Rate for Women vs Men ages (15-24) in 2010 by country**
+
+Gender differences are stark, with men typically having higher participation rates. Mauritania stands out with 82.80% female participation (vs 81.30% male), showing that gender-equitable policies work. Timor-Leste shows the widest gap (17.50% men vs 7.70% women), highlighting urgent policy needs in developing regions. Developed countries like those in North America and Europe have higher average participation rates for both genders due to more inclusive labour markets and better access to education.
+
+![Figure 10](dashboard/Figure10_BarChart.png)
 
 ---
 
-## Data Storytelling Approach
+**Figure 11: Top 10 Countries with the Highest Unemployment Rate against Working Age Population in 2010**
 
-**Narrative Arc**:
-1. **Setup**: Global inequality and development disparities
-2. **Conflict**: Identifying barriers to economic growth
-3. **Resolution**: Evidence-based interventions and their ROI
-4. **Call-to-Action**: Investment in education and gender equality as development accelerators
+Bulgaria leads with 10.20% unemployment despite a significant working-age population. European nations dominate this list, indicating that even developed economies struggle with unemployment. The disparity between workforce supply and job availability suggests structural economic challenges requiring targeted interventions.
 
-**Key Metrics Highlighted**:
-- Female labor force participation: 30-55% range
-- Average education years: 4-14 range
-- GDP per capita: $2K-$80K range
-- Development correlation coefficients: 0.6-0.85
+![Figure 11](dashboard/Figure11_BarChart.png)
 
 ---
 
-## Business & Policy Applications
+**Figure 12: Yearly Average Value Added Per Worker**
 
-### For Development Organizations
-- Justify education and gender equality funding through quantified ROI
-- Identify highest-impact interventions by country/region
-- Track SDG progress against data-driven benchmarks
+Productivity trends from 1995-2010 reveal a two-tier global economy. Developed nations (Japan $600K+, Sweden, USA) set the standard, while emerging markets like the Czech Republic and South Korea show significant catch-up growth, demonstrating the impact of education, technology, and infrastructure investments.
 
-### For Governments
-- Set evidence-based education investment targets
-- Design gender equality policies with productivity incentives
-- Benchmark performance against peer countries
-
-### For Investors
-- Identify emerging markets with highest growth potential
-- Assess human capital as leading economic indicator
-- Predict 5-10 year economic trajectories
+![Figure 12](dashboard/Figure12_BarChart.png)
 
 ---
 
-## Technical Implementation
+### Heat Map Visualization
 
-**Tools & Platforms**:
-- **Tableau**: Interactive dashboard creation and visualization
-- **Data Source**: World Bank Open Data API
-- **Processing**: Excel/CSV data cleaning and transformation
-- **Analysis**: Statistical correlation and trend analysis
+**Figure 13: Average Migration and Economic Impact for Top 30 countries**
 
-**Dashboard Features**:
-- Interactive filters by region, income level, time period
-- Drill-down capability for country-level detail
-- Dynamic calculations and KPI tracking
-- Comparison functionality (year-over-year, region-to-region)
+This visualization reveals the intricate relationship between migration flows and economic outcomes. Countries like Armenia and Belize show disproportionately high immigrant populations relative to their native populations. Remittances emerge as a critical economic lifeline, particularly in countries with significant diaspora communities, representing substantial portions of national GDP.
+
+![Figure 13](dashboard/Figure13_HeatMap.png)
 
 ---
 
-## How to Access & Interact
+### Map Visualization
 
-### Viewing Dashboards
-- Open dashboard images in `dashboards/` folder for static views
-- For interactive Tableau versions: [Add Tableau Public link if available]
+**Figure 14: Compares the Average School Years (2010), Skills Constraints (2010) and predicted Educational Attainment for (2010) using (2009) data**
 
-### Data Sources
-- World Bank Open Data: https://data.worldbank.org/
-- Download raw datasets used in analysis available in project repository
+A global education landscape emerges: darker regions (North America, Europe, East Asia) show higher average schooling years and lower skill constraints. Conversely, lighter regions (Africa, South Asia) reveal lower educational investment and higher skill gaps. This visualization underscores the critical link between education investment and labour market readiness. The associated bars demonstrate that areas with higher levels of education typically have less skill constraints.
+
+![Figure 14](dashboard/Figure14_Map.png)
 
 ---
 
-## Key Learnings & Insights
+### Line Chart
 
-### What Data Reveals
-- **Correlation ≠ Causation**: While gender participation correlates with productivity, implementation requires careful policy design
-- **Context Matters**: Regional differences suggest no one-size-fits-all solution
-- **Timing Matters**: Countries show 3-5 year lag between policy implementation and economic impact
-- **Multiplier Effects**: Education's impact compounds over generations
+**Figure 15: Trends in Labour Force Participation by Gender and Age Group between 1995 and 2010**
 
-### Limitations of Analysis
-- **Temporal lag**: Data may be 1-2 years behind real-time conditions
-- **Confounding variables**: Economic growth driven by multiple factors; isolation difficult
-- **Data quality**: Some countries have incomplete reporting across years
-- **Policy translation**: Statistical correlations don't guarantee policy success
+Over 15 years, female participation (ages 25-64) shows an upward trajectory, reflecting improved educational access and shifting social norms. Younger cohorts (15-24) maintain lower participation due to school enrollment. The persistent gender gap across all age groups highlights the need for continued policy focus on female workforce integration.
+
+![Figure 15](dashboard/Figure15_LineChart.png)
 
 ---
 
-## Future Enhancement Opportunities
+### Scatter Plot
 
-- Machine learning predictive models (forecasting 5-year economic growth)
-- Machine learning for clustering similar countries
-- Integration of real-time economic indicators
-- Scenario modeling ("what-if" policy simulations)
-- Geographic heatmaps for regional drilling
-- Time-series forecasting for emerging markets
+**Figure 16: Total Youth Unemployment (%) vs Total Value Added per Worker**
+
+A clear inverse relationship emerges: youth unemployment is typically higher in countries with lower productivity. Young women face particularly acute challenges, experiencing higher unemployment rates than young men across most economies. This suggests compounding effects of both economic development and gender discrimination.
+
+![Figure 16](dashboard/Figure16_Scatter.png)
 
 ---
 
-## Impact & Takeaways
+### Bubble Chart
 
-**For Decision Makers**: This analysis provides evidence that **gender equality and education are not just social imperatives—they are economic necessities**. Countries investing in these areas see measurable, quantifiable returns within 3-5 years.
+**Figure 17: Comparison of Total Youths Not in School or at Work (%) by Gender and Year in Top 15 countries**
 
-**For Researchers**: World Bank data reveals consistent global patterns; regional variations suggest opportunity for deeper causal analysis.
+South and Southeast Asian countries dominate this visualization, with India, Indonesia, and Pakistan showing alarming rates of youth exclusion from both education and employment. Women experience significantly higher exclusion than men. While some countries (Bulgaria, Kazakhstan) show progress, others (India) remain entrenched, suggesting persistent structural barriers requiring comprehensive policy intervention.
+
+![Figure 17](dashboard/Figure17_BubbleChart.png)
+
+---
+
+### Tree Map
+
+**Figure 18: Visualization of the Top 10 Policy Scores by Category and Country, with the productivity levels being represented by the colour**
+
+Strong policy frameworks correlate directly with higher productivity. Northern European countries excel across categories (labour market regulations, social security contributions), while countries with weaker policy frameworks lag. This visualization demonstrates that economic efficiency depends on comprehensive, well-designed policy ecosystems.
+
+![Figure 18](dashboard/Figure18_TreeMap.png)
+
+---
+
+### Box & Whiskers Plot
+
+**Figure 19: Productivity and social cohesion scores for selected European countries, with colour intensity representing productivity levels and bubble size indicating score magnitude**
+
+European economies display varying success in balancing productivity with social cohesion. Finland and Switzerland lead in both metrics, while Portugal and Spain show development potential. Denmark and Ireland exemplify sustainable models integrating strong economic performance with robust social systems—a model worthy of broader adoption.
+
+![Figure 19](dashboard/Figure19_Box&Whiskers.png)
+
+---
+
+## Business & Research Impact
+
+This analysis reveals critical insights for policymakers:
+
+1. **Gender equality drives economic participation** - Regions with gender-equitable policies show higher overall labour participation and productivity.
+
+2. **Education is the foundation** - Strong correlation between educational investment and labour market efficiency suggests education should be a policy priority.
+
+3. **Youth employment requires immediate attention** - The skills-job mismatch among youth demands coordinated education-industry partnerships.
+
+4. **Migration offers untapped potential** - Remittances and skilled migration can significantly boost development when properly managed.
+
+5. **Policy quality matters** - Countries with comprehensive policy frameworks demonstrate superior economic outcomes across multiple dimensions.
+
+---
+
+## Data Insights & Recommendations
+
+- **For Developing Nations:** Prioritize education infrastructure and gender-inclusive labour policies to accelerate productivity catch-up with developed economies.
+
+- **For Youth Employment:** Establish vocational training programs aligned with labour market demands to bridge the education-jobs gap.
+
+- **For Gender Equality:** Implement targeted policies supporting female workforce participation; evidence shows immediate positive economic returns.
+
+- **For Migration Policy:** Design frameworks that harness remittances and skilled labour mobility as development tools rather than viewing migration as a cost.
+
+---
+
+## Limitations & Future Work
+
+- **Data Recency:** Analysis covers 1995-2010; contemporary data would reveal post-financial crisis trends
+- **Granularity:** Country-level analysis masks important regional variations within nations
+- **Causality:** Correlations shown do not imply causation; deeper qualitative research needed
+- **Future Enhancements:** 
+  - Predictive models forecasting 2025-2030 employment trends
+  - Intersectional analysis examining overlapping inequalities
+  - Real-time data integration for ongoing monitoring
+
+---
+
+## Technical Details
+
+- **Data Source:** World Bank Open Data
+- **Visualization Tool:** Tableau
+- **Analysis Period:** 1995-2010
+- **Countries Analyzed:** 156
+- **Indicators:** 10+ socioeconomic dimensions
+
+---
+
+*This project demonstrates the power of data visualization in transforming complex socioeconomic datasets into actionable insights for policy and research.*
 
 ---
 
